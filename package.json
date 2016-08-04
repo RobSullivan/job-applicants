@@ -2,7 +2,7 @@
   "name": "applicants",
   "version": "1.0.0",
   "description": "List job applicants for a vacancy.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "test"
   },
@@ -27,6 +27,7 @@
     "express": "4.14.0",
     "govuk-elements-sass": "1.2.1",
     "govuk_frontend_toolkit": "4.14.1",
-    "mocha": "3.0.1"
+    "mocha": "3.0.1",
+    "sqlite3": "3.1.4"
   }
 }
