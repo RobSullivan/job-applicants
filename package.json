@@ -1,0 +1,29 @@
+{
+  "name": "applicants",
+  "version": "1.0.0",
+  "description": "List job applicants for a vacancy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobSullivan/job-applicants.git"
+  },
+  "keywords": [
+    "Home",
+    "Office",
+    "Digital",
+    "job",
+    "applicants"
+  ],
+  "author": "Robert Sullivan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobSullivan/job-applicants/issues"
+  },
+  "homepage": "https://github.com/RobSullivan/job-applicants#readme",
+  "dependencies": {
+    "govuk_frontend_toolkit": "4.14.1"
+  }
+}
