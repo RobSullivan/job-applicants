@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  table
+   thead
+     tr
+     th(scope="col") Applicant id
+     th(scope="col") Applicant name
+     tbody
+      each applicant in {id:1, full_name: 'joe bloggs'}
+       tr
+        td #{applicant.id}
+        td #{applicant.full_name}

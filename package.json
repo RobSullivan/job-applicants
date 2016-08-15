@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "test"
+    "test": "test",
+    "sqlite3-setup": "sqlite3 applicant.sqlite3 --init models/applicants-schema-sqlite3.sql"
   },
   "repository": {
     "type": "git",
