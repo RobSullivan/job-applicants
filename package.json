@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "test": "test",
-    "sqlite3-setup": "sqlite3 applicant.sqlite3 --init models/applicants-schema-sqlite3.sql"
+    "sqlite3-setup": "sqlite3 applicant.sqlite3 --init models/applicants-schema-sqlite3.sql",
+    "sqlite3-populate" : "sqlite3 applicant.sqlite3 --init models/populate.sql"
   },
   "repository": {
     "type": "git",
