@@ -8,7 +8,7 @@
     "test": "test",
     "sqlite3-setup": "sqlite3 applicant.sqlite3 --init models/applicants-schema-sqlite3.sql",
     "start-sqlite3": "SQLITE_FILE=applicant.sqlite3 APPLICANT_MODEL=models/applicants-sqlite3 node ./bin/www",
-    "sqlite3-populate" : "sqlite3 applicant.sqlite3 --init models/populate.sql"
+    "sqlite3-populate": "sqlite3 applicant.sqlite3 --init models/populate.sql"
   },
   "repository": {
     "type": "git",
@@ -33,13 +33,18 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "govuk-elements-sass": "1.2.1",
+    "govuk-elements-sass": "1.2.2",
     "govuk_frontend_toolkit": "4.14.1",
     "jade": "~1.11.0",
     "mocha": "3.0.1",
     "morgan": "~1.7.0",
+    "node-sass-middleware": "0.9.8",
     "pug": "2.0.0-beta4",
     "serve-favicon": "~2.3.0",
     "sqlite3": "3.1.4"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-sass": "2.3.2"
   }
 }

@@ -1,8 +1,17 @@
 doctype html
 html(lang="en")
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+  include ./includes/head.pug
+    
+    
+
+    
+
   body
-    block content
-    script(src='/javascripts/validate_form.js')
+    div(id="page-container")
+     div(class="grid-row")
+
+      div(class="column-two-thirds")
+       block content
+      div(class="column-third")
+       block content
+      script(src='/javascripts/validate_form.js')
