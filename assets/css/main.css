@@ -1,3 +1,9 @@
+.homepage-top{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
 .grid-row:after, #content:after, .notice:after, .panel:after, fieldset:after, .form-section:after, .form-group:after, .form-block:after, .breadcrumbs ol:after {
   content: "";
   display: block;
@@ -244,6 +250,33 @@ legend {
   box-sizing: border-box;
   max-width: 100%;
   display: table; }
+
+/* Custom styles */
+#global-header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: black;
+  text-align: center;
+  
+
+}
+
+#global-header a{
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 19px;
+  font-family: "nta", Arial, sans-serif;
+}
+
+.welcome-text{
+  background-color: #9440b2;
+  color: white;
+  
+}
+
+
 
 #content {
   padding-bottom: 30px;

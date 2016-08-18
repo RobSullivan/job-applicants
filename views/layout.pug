@@ -5,14 +5,14 @@ html(lang="en")
     
 
    
-main
-  body
-   header(class="homepage-top") HOD Applicants
-
+body
+  header(role="banner" id="global-header" class="content") 
+   a(href="https://hodigital.blog.gov.uk/") Home Office Digital
+  main(id="content")
    div(id="page-container")
-     div(class="grid-row")
+    div(class="grid-row")
+     div(class="column-full")
+      block content
 
-      div(class="column-two-thirds")
-       block content
-      
-      script(src='/javascripts/validate_form.js')
+  footer
+   

@@ -1,25 +1,27 @@
 extends layout
 
-
                   
 block content
-
-  h1 Applicants for web dev
-    
-
-      include ./includes/search-form.pug
-      table
-        thead
-          tr
-            th(scope="col") Applicant id
-            th(scope="col") Applicant name
-            th(scope="col") Summary
-            th(scope="col") More
-              tbody
-                each applicant in applicant_list
-                  tr
-                  td(class="numeric") #{applicant.id}
-                  td #{applicant.full_name}
-                  td #{applicant.summary}
-                  td 
-                    a(href='/applicants/view?id='+applicant.id) Read more
+ div(class="welcome-text")
+  h1 Welcome to this list of job applicants
+  p The best place to see a list of applicants for the role of Junior Developer
+  p(class="simpler") Simpler, clearer, might not break
+  div(class="search-forms")
+  
+   include ./includes/search-form.pug
+   
+ h2 Here's the full list
+  table
+   thead
+    tr
+     th(scope="col") Id
+     th(scope="col") Full name
+     th(scope="col") More details
+     tbody
+     each applicant in applicant_list
+      tr
+       td(class="numeric") #{applicant.id}
+       td #{applicant.full_name}
+       td 
+        a(href='/applicants/view?id='+applicant.id class="link") More details
+      

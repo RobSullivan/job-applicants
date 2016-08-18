@@ -8,7 +8,7 @@ router.get('/', function(req, res, next){
 	.then(applicant_list => {
 		var idPromises = [];
 		for (var id of applicant_list){
-			console.log('line:11/applicants-sqlite3: ',id)
+			
 			idPromises.push(
 				applicants.read(id.id)
 				.then(applicant => {
@@ -16,7 +16,7 @@ router.get('/', function(req, res, next){
 				})
 			);
 		}
-		console.log(idPromises)
+		
 		return Promise.all(idPromises);
 	})
 	.then(applicant_list => {
