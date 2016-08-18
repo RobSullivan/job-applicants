@@ -246,40 +246,7 @@ legend {
   max-width: 100%;
   display: table; }
 
-/* Custom styles */
-#global-header{
-  padding-top: 20px;
-  padding-bottom: 20px;
 
-  background-color: black;
-  text-align: center;
-  
-
-}
-
-#global-header a{
-  color: white;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 19px;
-  font-family: "nta", Arial, sans-serif;
-}
-
-.welcome-text{
-  background-color: #005ea5;
-  color: white;
-  max-width: 100%;
-  padding-top: 20px;
-  padding-right: 20px;
-  text-align: center;
-  padding-bottom: 10px;
-  
-
-}
-
-.search-form{
-  background-color: white;
-}
 
 
 
