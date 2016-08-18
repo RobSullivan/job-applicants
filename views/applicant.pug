@@ -2,6 +2,12 @@ extends layout
 
 block content
 
+ h1(class="heading-xlarge") #{applicant.full_name}
+ 
 
-	h3 #{applicant.full_name}
-		p #{applicant.summary}
+ ul(class="list list-bullet")
+  li Bio: #{applicant.summary}
+  li Programming langauges: #{applicant.languages}
+  li Current employer: #{applicant.company}
+  li 
+   a(href="mailto:"+applicant.email class="link") #{applicant.email}

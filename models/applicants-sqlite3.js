@@ -37,7 +37,7 @@ exports.read = function(id){
 				}
 				else{
 					var applicant = new Applicant(row.id, row.full_name,
-												row.summary);
+												row.summary, row.languages, row.company, row.email);
 					resolve(applicant)
 				}
 			});

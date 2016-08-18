@@ -12,7 +12,9 @@ router.get('/', function(req, res, next){
 			idPromises.push(
 				applicants.read(id.id)
 				.then(applicant => {
-					return {id: applicant.id, full_name: applicant.full_name, summary:applicant.summary};
+					return {id: applicant.id, full_name: applicant.full_name, 
+						summary:applicant.summary, languages: applicant.languages,
+						employer:applicant.company};
 				})
 			);
 		}

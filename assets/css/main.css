@@ -1,8 +1,3 @@
-.homepage-top{
-  background-color: black;
-  color: white;
-  font-weight: bold;
-}
 
 .grid-row:after, #content:after, .notice:after, .panel:after, fieldset:after, .form-section:after, .form-group:after, .form-block:after, .breadcrumbs ol:after {
   content: "";
@@ -10,7 +5,7 @@
   clear: both; }
 
 #content {
-  max-width: 960px;
+  max-width: 1020px;
   margin: 0 15px; }
   @media (min-width: 641px) {
     #content {
@@ -38,7 +33,7 @@
   clear: both; }
 
 #content {
-  max-width: 960px;
+  max-width: 1020px;
   margin: 0 15px; }
   @media (min-width: 641px) {
     #content {
@@ -271,9 +266,19 @@ legend {
 }
 
 .welcome-text{
-  background-color: #9440b2;
+  background-color: #005ea5;
   color: white;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-bottom: 10px;
   
+
+}
+
+.search-form{
+  background-color: white;
 }
 
 

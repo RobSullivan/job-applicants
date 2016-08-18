@@ -3,14 +3,13 @@ extends layout
                   
 block content
  div(class="welcome-text")
-  h1 Welcome to this list of job applicants
-  p The best place to see a list of applicants for the role of Junior Developer
-  p(class="simpler") Simpler, clearer, might not break
-  div(class="search-forms")
+  h1(class="heading-xlarge") Welcome to this list of job applicants
+  p(class="font-large") The best place applicants for the Junior Developer
   
-   include ./includes/search-form.pug
+ div(class="search-form")
+  include ./includes/search-form.pug
    
- h2 Here's the full list
+  h2 Here's the full list
   table
    thead
     tr
