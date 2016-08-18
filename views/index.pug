@@ -1,9 +1,13 @@
 extends layout
 
+
                   
 block content
-  h1= title
-    p Welcome to #{title}
+
+  h1 Applicants for web dev
+    
+
+      include ./includes/search-form.pug
       table
         thead
           tr
@@ -14,7 +18,7 @@ block content
               tbody
                 each applicant in applicant_list
                   tr
-                  td #{applicant.id}
+                  td(class="numeric") #{applicant.id}
                   td #{applicant.full_name}
                   td #{applicant.summary}
                   td 
