@@ -9,7 +9,7 @@ SQLite3 was used for this website and while it is easy to use once installed, in
  - `git clone https://github.com/RobSullivan/job-applicants.git`
  - `cd job-applicants`
  - `npm install` 
- - `npm run sqlite3-start`
+ - `npm run start-sqlite3`
  - open a browser and navigate to localhost:3000
  - To run the test `npm test`*
  
