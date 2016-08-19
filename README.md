@@ -10,6 +10,7 @@ SQLite3 was used for this website and while it is easy to use once installed, in
  - `cd job-applicants`
  - `npm install` 
  - `npm run sqlite3-start`
+ -  open a browser and navigate to localhost:3000
 
 
 
