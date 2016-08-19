@@ -3,13 +3,13 @@ div(class="form-group")
   div(class="search-content")
   label(class="form-label" for="applicant-search") Search for applicants
    span(class="form-hint") Enter an applicant id
-  input(class="form-control js-enabled focused" id="applicant-search" type="text")
+  input(class="form-control js-enabled focused" id="applicant-search" type="text" required)
   input(class="button" type="submit" value="Search")
 div(class="form-group")
  form(class="form-group-related" action="/applicants/view" method="get" role="search")
   legend(class="visuallyhidden") Search for an applicant
   label(class="form-label" for="applicant-search")
    span(class="form-hint") Enter the applicant's full name
-  input(class="form-control" type="text")
+  input(class="form-control" type="text" required)
   input(class="submit button" type="submit" value="Search")
 
