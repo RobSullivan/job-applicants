@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var routes = require('./routes/index');
-//var users = require('./routes/applicants');
+
 var applicants = require('./routes/applicants')
 
 var app = express();
@@ -24,14 +24,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-/*
-app.use(
-  sassMiddleware({
-  src: __dirname + '/sass',
-  dest: __dirname + '/public/stylesheets',
-  debug: true
-}));
-*/
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'assets')));
 
@@ -70,11 +63,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-//connect to sqlite3
 
-//model.connect('./applicant.sqlite3', function(err){
-//  if (err) throw err;
-//})
 
 
 
