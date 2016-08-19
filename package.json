@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "test",
+    "test": "mocha -R list tests/applicants-test.js ",
     "sqlite3-setup": "sqlite3 applicant.sqlite3 --init models/applicants-schema-sqlite3.sql",
     "start-sqlite3": "SQLITE_FILE=applicant.sqlite3 APPLICANT_MODEL=models/applicants-sqlite3 node ./bin/www",
     "sqlite3-populate": "sqlite3 applicant.sqlite3 --init models/populate.sql"
